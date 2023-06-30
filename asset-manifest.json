@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/swagh001.github.io/static/css/main.852428fd.css",
+    "main.js": "/swagh001.github.io/static/js/main.679b905b.js",
+    "static/js/787.128fc6e9.chunk.js": "/swagh001.github.io/static/js/787.128fc6e9.chunk.js",
+    "static/media/FootLocker.png": "/swagh001.github.io/static/media/FootLocker.27804ffcf772e8555470.png",
+    "static/media/HealthCare.png": "/swagh001.github.io/static/media/HealthCare.32562fe42865b0a1b662.png",
+    "static/media/myimage.jpeg": "/swagh001.github.io/static/media/myimage.0e83bec2608886d83b29.jpeg",
+    "static/media/Itachi_Uchiha_Resume.pdf": "/swagh001.github.io/static/media/Itachi_Uchiha_Resume.1b3e186f53a4b90ca49e.pdf",
+    "static/media/home-main.svg": "/swagh001.github.io/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/Retax.png": "/swagh001.github.io/static/media/Retax.783114d52095df170ecf.png",
+    "static/media/home-bg.jpg": "/swagh001.github.io/static/media/home-bg.2549168122a3128d6926.jpg",
+    "static/media/logo.svg": "/swagh001.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/swagh001.github.io/index.html",
+    "main.852428fd.css.map": "/swagh001.github.io/static/css/main.852428fd.css.map",
+    "main.679b905b.js.map": "/swagh001.github.io/static/js/main.679b905b.js.map",
+    "787.128fc6e9.chunk.js.map": "/swagh001.github.io/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.852428fd.css",
+    "static/js/main.679b905b.js"
+  ]
+}
