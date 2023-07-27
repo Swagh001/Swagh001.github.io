@@ -29,16 +29,16 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const onButtonClick = () => {
+    // OG
     window.open(
       "https://drive.google.com/file/d/1Ec_5llHSVpIsiRKsxcqii_AFW2pl_1do/view?usp=drive_link",
       "_blank"
     );
     let link = document.createElement("a");
     link.href =
-      "https://drive.google.com/uc?id=1Ec_5llHSVpIsiRKsxcqii_AFW2pl_1do";
-    link.download = "Shailesh_Wagh_Resume";
+      "https://drive.google.com/uc?export=download&id=1Ec_5llHSVpIsiRKsxcqii_AFW2pl_1do";
+    link.download = "Shailesh-Wagh.pdf";
     link.click();
-
   };
   
 
@@ -106,7 +106,7 @@ export default function Navbar() {
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-
+              
               <Button
                 backgroundColor="#a891b7"
                 _hover={{ bg: "#a891b7", color: "black" }}
