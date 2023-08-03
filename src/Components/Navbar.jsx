@@ -29,6 +29,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const onButtonClick = () => {
+    // OG
     window.open(
       "https://drive.google.com/file/d/1QxRk-X4BEne51JTol7OIP1NDM5TPnrO-/view?usp=sharing",
       "_blank"
@@ -105,7 +106,7 @@ export default function Navbar() {
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-
+              
               <Button
                 backgroundColor="#a891b7"
                 _hover={{ bg: "#a891b7", color: "black" }}
