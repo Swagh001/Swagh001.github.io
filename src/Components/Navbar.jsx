@@ -30,15 +30,14 @@ export default function Navbar() {
 
   const onButtonClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1Ec_5llHSVpIsiRKsxcqii_AFW2pl_1do/view?usp=drive_link",
+      "https://drive.google.com/file/d/1QxRk-X4BEne51JTol7OIP1NDM5TPnrO-/view?usp=sharing",
       "_blank"
     );
     let link = document.createElement("a");
     link.href =
-      "https://drive.google.com/uc?id=1Ec_5llHSVpIsiRKsxcqii_AFW2pl_1do";
-    link.download = "Shailesh_Wagh_Resume";
+      "https://drive.google.com/uc?export=download&id=1QxRk-X4BEne51JTol7OIP1NDM5TPnrO-";
+    link.download = "Shailesh-Wagh-Resume";
     link.click();
-
   };
   
 

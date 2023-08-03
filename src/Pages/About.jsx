@@ -4,10 +4,14 @@ import homeLogo from "../images/myimage.jpeg";
 
 const About = () => {
   const onButtonClick = () => {
-    const link = document.createElement("a");
-    link.href = "https://drive.google.com/uc?export=download&id=1Ec_5llHSVpIsiRKsxcqii_AFW2pl_1do"; 
-    link.target = "_blank";
-    link.download = "Shailesh_Wagh_Resume.pdf";
+    window.open(
+      "https://drive.google.com/file/d/1QxRk-X4BEne51JTol7OIP1NDM5TPnrO-/view?usp=sharing",
+      "_blank"
+    );
+    let link = document.createElement("a");
+    link.href =
+      "https://drive.google.com/uc?export=download&id=1QxRk-X4BEne51JTol7OIP1NDM5TPnrO-";
+    link.download = "Shailesh-Wagh-Resume";
     link.click();
   };
 
