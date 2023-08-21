@@ -7,40 +7,36 @@ import {
   useColorMode,
   Show,
   HStack,
-  Text,
+  // Text,
   useDisclosure,
   IconButton,
-  Hide,
+  // Hide,
+  
 } from "@chakra-ui/react";
 import {
   MoonIcon,
   SunIcon,
   HamburgerIcon,
   CloseIcon,
-  AddIcon,
+  // AddIcon,
 } from "@chakra-ui/icons";
-import Photo from "./Photo";
+// import Photo from "./Photo";
 import Name from "./Name";
 import "./Navbar.css";
-import Itachi_Uchiha_Resume from "./Itachi_Uchiha_Resume.pdf";
+import ShaileshWaghResume from "./Shailesh-Wagh-Resume.pdf"
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const onButtonClick = () => {
-    // OG
-    window.open(
-      "https://drive.google.com/file/d/1QxRk-X4BEne51JTol7OIP1NDM5TPnrO-/view?usp=sharing",
-      "_blank"
-    );
-    let link = document.createElement("a");
-    link.href =
-      "https://drive.google.com/uc?export=download&id=1QxRk-X4BEne51JTol7OIP1NDM5TPnrO-";
-    link.download = "Shailesh-Wagh-Resume";
+    window.open(ShaileshWaghResume, "_blank");
+
+    const link = document.createElement("a");
+    link.href = ShaileshWaghResume;
+    link.download = "Shailesh-Wagh-Resume.pdf";
     link.click();
   };
-  
 
   return (
     <div id="nav-menu">
@@ -50,11 +46,11 @@ export default function Navbar() {
         width={["100%"]}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <HStack w="50%">
+          <HStack w="42%">
             <Name />
 
             <Show breakpoint="(min-width: 1000px)">
-              <Photo />
+              {/* <Photo /> */}
             </Show>
           </HStack>
 
@@ -66,37 +62,37 @@ export default function Navbar() {
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
               >
-                <a href="#home">
                 <Button className="nav-link home">
+                  <a href="#home">
                     {" "}
                     <b>Home</b>
+                  </a>
                 </Button>
-                </a>
 
-                <a href="#about">
                 <Button className="nav-link about">
+                  <a href="#about">
                     <b>About</b>
+                  </a>
                 </Button>
-                </a>
 
-                <a href="#skills">
                 <Button className="nav-link skills">
+                  <a href="#skills">
                     {" "}
                     <b>Skills</b>
+                  </a>
                 </Button>
-                </a>
 
-                <a href="#projects">
                 <Button className="nav-link projects">
+                  <a href="#projects">
                     <b>Projects</b>
+                  </a>
                 </Button>
-                </a>
 
-                <a href="#contact">
                 <Button className="nav-link contact">
+                  <a href="#contact" >
                     <b>Contact</b>
+                  </a>
                 </Button>
-                </a>
               </HStack>
             </HStack>
           </Flex>
@@ -106,7 +102,7 @@ export default function Navbar() {
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-              
+
               <Button
                 backgroundColor="#a891b7"
                 _hover={{ bg: "#a891b7", color: "black" }}
