@@ -2,7 +2,7 @@ import React from "react";
 import {Card,Image,Stack,CardBody,Heading,Text,CardFooter,Button,Box, Center,Link,Grid} from "@chakra-ui/react"
 import retax from "../images/Project/Retax.png"
 import HealthCare from "../images/Project/HealthCare.png"
-// import FootLocker from "../images/Project/FootLocker.png"
+import FootLocker from "../images/Project/FootLocker.png"
 import GitHubCalendar from 'react-github-calendar';
 import Hilling from "../images/Hilling.png"
 // import 'react-github-calendar/dist/github-calendar.css' from 'react-github-calendar';
@@ -154,6 +154,52 @@ const Projects = () => {
   </Stack>
 </Card>
 
+{/* footlocker */}
+<Card
+  direction={{ base: 'column', sm: 'row' }}
+  overflow='hidden'
+  variant='outline'
+  className="project-card"
+  w="80%"
+  m="auto"
+  mb="10px"
+>
+  <Image
+    objectFit='cover'
+    maxW={{ lg: '500px', sm: '200px' }}
+    src={FootLocker}
+    alt='Caffe Latte'
+    w="500px"
+  />
+
+  <Stack>
+  <CardBody>
+            <Heading className="project-title" size='md'>The perfect latte</Heading>
+
+            <Text className="project-description" py='2'>
+            Footlocker Clone is a feature-rich online platform designed to replicate the renowned footwear retailer, Footlocker.
+            The clone offers a vast collection of sneakers, athletic shoes, and sportswear from popular brands,
+            providing customers with an immersive shopping experience. With intuitive search and filtering options,
+            users can easily find their desired products, view detailed product information, and make purchases
+            hassle-free. The clone also incorporates secure payment gateways, order tracking, and customer support,
+            ensuring a seamless and satisfying shopping journey for sneaker enthusiasts.
+            </Text>
+            <Text className="project-tech-stack" py='2'>
+            You can Visit Below Link for more...
+            </Text>
+          </CardBody>
+
+          <CardFooter>
+            <Button className="project-github-link" variant='solid' colorScheme='blue' mr={2}>
+              <a href="https://github.com/Roshankr7249/footlocker">Github</a>
+            </Button>
+            <Button className="project-deployed-link" variant='solid' colorScheme='blue'>
+              <a href="https://heartfelt-clafoutis-70d37c.netlify.app/index.html">Deployed link</a>
+            </Button>
+          </CardFooter>
+  </Stack>
+</Card>
+
 
 
 
@@ -237,30 +283,30 @@ export default Projects;
 //         />
 
 //         <Stack>
-//           <CardBody>
-//             <Heading className="project-title" size='md'>The perfect latte</Heading>
+          // <CardBody>
+          //   <Heading className="project-title" size='md'>The perfect latte</Heading>
 
-//             <Text className="project-description" py='2'>
-//             Footlocker Clone is a feature-rich online platform designed to replicate the renowned footwear retailer, Footlocker.
-//             The clone offers a vast collection of sneakers, athletic shoes, and sportswear from popular brands,
-//             providing customers with an immersive shopping experience. With intuitive search and filtering options,
-//             users can easily find their desired products, view detailed product information, and make purchases
-//             hassle-free. The clone also incorporates secure payment gateways, order tracking, and customer support,
-//             ensuring a seamless and satisfying shopping journey for sneaker enthusiasts.
-//             </Text>
-//             <Text className="project-tech-stack" py='2'>
-//             You can Visit Below Link for more...
-//             </Text>
-//           </CardBody>
+          //   <Text className="project-description" py='2'>
+          //   Footlocker Clone is a feature-rich online platform designed to replicate the renowned footwear retailer, Footlocker.
+          //   The clone offers a vast collection of sneakers, athletic shoes, and sportswear from popular brands,
+          //   providing customers with an immersive shopping experience. With intuitive search and filtering options,
+          //   users can easily find their desired products, view detailed product information, and make purchases
+          //   hassle-free. The clone also incorporates secure payment gateways, order tracking, and customer support,
+          //   ensuring a seamless and satisfying shopping journey for sneaker enthusiasts.
+          //   </Text>
+          //   <Text className="project-tech-stack" py='2'>
+          //   You can Visit Below Link for more...
+          //   </Text>
+          // </CardBody>
 
-//           <CardFooter>
-//             <Button className="project-github-link" variant='solid' colorScheme='blue' mr={2}>
-//               <a href="https://github.com/Roshankr7249/footlocker">Github</a>
-//             </Button>
-//             <Button className="project-deployed-link" variant='solid' colorScheme='blue'>
-//               <a href="https://heartfelt-clafoutis-70d37c.netlify.app/index.html">Deployed link</a>
-//             </Button>
-//           </CardFooter>
+          // <CardFooter>
+          //   <Button className="project-github-link" variant='solid' colorScheme='blue' mr={2}>
+          //     <a href="https://github.com/Roshankr7249/footlocker">Github</a>
+          //   </Button>
+          //   <Button className="project-deployed-link" variant='solid' colorScheme='blue'>
+          //     <a href="https://heartfelt-clafoutis-70d37c.netlify.app/index.html">Deployed link</a>
+          //   </Button>
+          // </CardFooter>
 //         </Stack>
 //       </Card>
 //       <Card
